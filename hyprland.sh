@@ -1,7 +1,5 @@
 sudo dnf copr enable solopasha/hyprland
-sudo dnf install hyprland sddm kitty waybar hyprpolkitagent mako xdg-desktop-portal-hyprland pavucontrol nemo rofi
-sudo systemctl enable sddm.service
-sudo systemctl set-default graphical.target
+sudo dnf install hyprland kitty waybar hyprpolkitagent mako xdg-desktop-portal-hyprland pavucontrol nemo rofi file-roller
 systemctl --user enable --now hyprpolkitagent.service
 sudo dnf remove wofi
 
