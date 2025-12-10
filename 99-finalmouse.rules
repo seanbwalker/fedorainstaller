@@ -1,0 +1,6 @@
+# Finalmouse USB devices
+SUBSYSTEM=="usb", ATTR{idVendor}=="361d", GROUP="wheel", MODE="0660"
+
+# Finalmouse HIDRAW devices — match by USB parent
+KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="361d", GROUP="wheel", MODE="0660"
+
